@@ -34,7 +34,7 @@ namespace StackQueueProblem
                 Console.WriteLine("stack is empty");
                 return;
             }
-            Console.WriteLine("top of the stack "+this.top.data);
+            Console.WriteLine("peek of the stack "+this.top.data);
             Display();
         }
         public void Pop()

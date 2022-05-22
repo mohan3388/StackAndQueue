@@ -76,6 +76,22 @@ namespace StackQueueProblem
             }
             Display();
         }
+        public void Dequeue()
+        {
+            if(this.head==null)
+            {
+                Console.WriteLine("Empty");
+                return;
+
+            }else
+            {
+                while(this.head != null)
+                {
+                    Console.WriteLine("Dequeue is: " + this.head.data);
+                    this.head = this.head.next;
+                }
+            }
+        }
         public void Display()
         {
             Node temp = this.head;

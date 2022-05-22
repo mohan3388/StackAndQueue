@@ -28,8 +28,16 @@ class Program
                     stack.Pop();
             stack.Peek();
                     break;
+                case 3:
+                    stack.Queue(70);
+                    stack.Queue(30);
+                    stack.Queue(56);
+                    break;
+                default:
+                    check = false;
+                    break;
 
-        }
+            }
             }
     }
 }

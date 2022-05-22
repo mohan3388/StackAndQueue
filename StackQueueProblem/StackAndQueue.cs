@@ -27,6 +27,26 @@ namespace StackQueueProblem
             this.top=node;
             Console.WriteLine("pushed data in stack " + data);
         }
+        public void Peek()
+        {
+            if(this.top==null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("top of the stack "+this.top.data);
+            Display();
+        }
+        public void Pop()
+        {
+            if(this.top==null)
+            {
+                Console.WriteLine("stack is empty");
+                return ;
+            }
+            Console.WriteLine("pop value is "+this.top.data);
+            top=top.next;
+        }
         public void Display()
         {
             Node temp = this.top;
